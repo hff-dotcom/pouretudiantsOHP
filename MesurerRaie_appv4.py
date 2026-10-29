@@ -34,7 +34,7 @@ from scipy.optimize import OptimizeWarning, curve_fit
 from scipy.signal import find_peaks
 from scipy.special import wofz
 
-APP_NAME = "SpectroFit"
+APP_NAME = "MesurerRaie"
 MIN_POINTS = 8
 MAXFEV = 30000
 WCS_KEYS = (
