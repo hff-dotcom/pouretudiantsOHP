@@ -1,0 +1,6 @@
+streamlit==1.50.0
+numpy>=1.26,<3
+scipy>=1.13,<2
+astropy>=6.0,<8
+matplotlib>=3.9,<4
+pandas>=2.2,<3
