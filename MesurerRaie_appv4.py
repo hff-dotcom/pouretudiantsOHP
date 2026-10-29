@@ -1,14 +1,17 @@
-"""SpectroFit — ajustement de raies spectrales (application Streamlit).
+"""MesurerRaie  — ajustement de raies spectrales (application Streamlit).
 
 Point d'entrée prêt pour Streamlit Community Cloud.
 
 Lancement local :
-    streamlit run streamlit_app.py
+    streamlit run MesurerRaie_appv4.py
 
 L'application lit un spectre FITS 1D, reconstruit l'axe en longueur d'onde à
 partir du WCS, puis ajuste un profil gaussien, une double gaussienne ou un
 profil de Voigt. Le mode « détection automatique » recherche plusieurs raies
 d'absorption et ajuste chacune d'elles.
+
+Les résultats obtenus doivent être considérés comme des supports d'apprentissage 
+et ne doivent pas être utilisés comme des résultats scientifiques validés.
 """
 
 from __future__ import annotations
@@ -1052,6 +1055,11 @@ def render_welcome() -> None:
         L'axe en longueur d'onde est reconstruit depuis les mots-clés FITS
         `CRVAL1`, `CDELT1` et `CRPIX1` (ou `CD1_1`). En l'absence de
         calibration, le spectre est affiché en pixels.
+        
+        ## Avertissement
+        
+        Cette application a été développée à des fins exclusivement pédagogiques 
+        pour aider les étudiants. Elle n’est pas destinée à un usage scientifique.
         """
     )
 
